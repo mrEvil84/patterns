@@ -17,7 +17,9 @@ class InvokeExample
         $user->setName('Jan');
         $user->setSurname('Kowalski');
 
-        $user();
+        //$user();
+
+        echo $user();
     }
 }
 
@@ -59,11 +61,13 @@ class User
     }
 
     /**
+     * Use object as a function
      * Since 5.3 is called in any string context , obj to string
      * @return string
      */
     public function __invoke()
     {
+        var_dump('_invoke()');
         var_dump($this);
     }
 

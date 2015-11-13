@@ -28,17 +28,17 @@ class IssetExample
         $user->setSurname('Kowalski2');
 
         $user->age = 31;
-        var_dump($user->age);
+        //var_dump($user->age);
 
 
-        var_dump($user);
+        //var_dump($user);
 
-        var_dump(isset($user->age));
+        //var_dump(isset($user->age));
 
-        if (isset($user->age)) {
-           unset($user->age);
-        }
-        var_dump($user);
+        //if (isset($user->age)) {
+        //   unset($user->age);
+        //}
+        //var_dump($user);
 
         die;
 
