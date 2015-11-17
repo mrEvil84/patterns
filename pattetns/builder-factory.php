@@ -1,6 +1,11 @@
 <?php
 namespace Patterns\BuilderFactory;
 
+/**
+ * Interface ILog
+ * @package Patterns\BuilderFactory
+ * @description Rozwiazuje problem gdy w przyszlosci bedzie potrzeba zmiany obslugi logowania np logi zamist do pliku chcemy pisac do bazy danych
+ */
 interface ILog
 {
     public function doLog($message);
@@ -9,9 +14,15 @@ interface ILog
 class DbLog implements ILog
 {
     public function doLog($message) {
-        echo $message;
+        echo 'db do log ' . $message;
     }
+}
 
+class TxtLog implements ILog
+{
+    public function doLog($message) {
+        echo 'txt do log '.$message;
+    }
 }
 
 class Log

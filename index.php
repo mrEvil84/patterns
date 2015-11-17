@@ -6,6 +6,8 @@
  * Time: 10:21
  */
 include 'pattetns/builder-factory.php';
+include 'pattetns/abstract-factory.php';
+include 'pattetns/strategy.php';
 include 'pattetns/observer.php';
 include 'pattetns/decorator.php';
 include 'pattetns/adapter.php';
@@ -21,7 +23,9 @@ include 'magicMethods/CallExample.php';
 //use Patterns\BuilderFactory as BuilderFactory;
 //use Patterns\Observer as Observer;
 //use Patterns\Decorator as Decorator;
-use Patterns\Adapter as Adapter;
+//use Patterns\Adapter as Adapter;
+//use Patterns\AbstractFactory as AbstractFactory;
+use Patterns\Strategy as Strategy;
 //use MagicMethods\SleepExample as SleepExample;
 //use MagicMethods\SleepExample as ToStringExample;
 //use MagicMethods\SleepExample as InvokeExample;
@@ -35,7 +39,9 @@ use Patterns\Adapter as Adapter;
 //echo BuilderFactory\Simulate::execute() . '<br/>';
 //echo Observer\Simulate::execute() . '<br/>';
 //echo Decorator\Simulate::execute() . '<br/>';
-echo Adapter\Simulate::execute() . '<br/>';
+//echo Adapter\Simulate::execute() . '<br/>';
+//echo AbstractFactory\Simulate::execute() . '<br/>';
+echo Strategy\Simulate::execute() . '<br/>';
 //MagicMethods\SleepExample\SleepExample::simulate();
 //MagicMethods\ToStringExample\ToStringExample::simulate();
 //MagicMethods\InvokeExample\InvokeExample::simulate();
