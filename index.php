@@ -19,13 +19,14 @@ include 'magicMethods/DebugInfoExample.php';
 include 'magicMethods/CloneExample.php';
 include 'magicMethods/IssetExample.php';
 include 'magicMethods/CallExample.php';
+include 'traits/traits.php';
 
 //use Patterns\BuilderFactory as BuilderFactory;
 //use Patterns\Observer as Observer;
 //use Patterns\Decorator as Decorator;
 //use Patterns\Adapter as Adapter;
 //use Patterns\AbstractFactory as AbstractFactory;
-use Patterns\Strategy as Strategy;
+//use Patterns\Strategy as Strategy;
 //use MagicMethods\SleepExample as SleepExample;
 //use MagicMethods\SleepExample as ToStringExample;
 //use MagicMethods\SleepExample as InvokeExample;
@@ -34,14 +35,14 @@ use Patterns\Strategy as Strategy;
 //use MagicMethods\CloneExample as CloneExample;
 //use MagicMethods\IssetExample as IssetExample;
 //use MagicMethods\CallExample as CallExample;
-
+use Traits\TraitExample;
 
 //echo BuilderFactory\Simulate::execute() . '<br/>';
 //echo Observer\Simulate::execute() . '<br/>';
 //echo Decorator\Simulate::execute() . '<br/>';
 //echo Adapter\Simulate::execute() . '<br/>';
 //echo AbstractFactory\Simulate::execute() . '<br/>';
-echo Strategy\Simulate::execute() . '<br/>';
+//echo Strategy\Simulate::execute() . '<br/>';
 //MagicMethods\SleepExample\SleepExample::simulate();
 //MagicMethods\ToStringExample\ToStringExample::simulate();
 //MagicMethods\InvokeExample\InvokeExample::simulate();
@@ -50,3 +51,4 @@ echo Strategy\Simulate::execute() . '<br/>';
 //MagicMethods\CloneExample\CloneExample::simulate();
 //MagicMethods\IssetExample\IssetExample::simulate();
 //MagicMethods\CallExample\CallExample::simulate();
+echo Traits\TraitsExample\Simulate::execute();
