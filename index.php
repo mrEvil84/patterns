@@ -20,6 +20,7 @@ include 'magicMethods/CloneExample.php';
 include 'magicMethods/IssetExample.php';
 include 'magicMethods/CallExample.php';
 include 'traits/traits.php';
+include 'traits/php54.php';
 
 //use Patterns\BuilderFactory as BuilderFactory;
 //use Patterns\Observer as Observer;
@@ -35,7 +36,8 @@ include 'traits/traits.php';
 //use MagicMethods\CloneExample as CloneExample;
 //use MagicMethods\IssetExample as IssetExample;
 //use MagicMethods\CallExample as CallExample;
-use Traits\TraitExample;
+//use Traits\TraitExample;
+use Traits\php54;
 
 //echo BuilderFactory\Simulate::execute() . '<br/>';
 //echo Observer\Simulate::execute() . '<br/>';
@@ -51,4 +53,5 @@ use Traits\TraitExample;
 //MagicMethods\CloneExample\CloneExample::simulate();
 //MagicMethods\IssetExample\IssetExample::simulate();
 //MagicMethods\CallExample\CallExample::simulate();
-echo Traits\TraitsExample\Simulate::execute();
+//echo Traits\TraitsExample\Simulate::execute();
+echo Traits\php54\Simulate::execute();
