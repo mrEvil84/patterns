@@ -1,0 +1,9 @@
+{
+  "config": {
+    "vendor-dir": "lib/vendor"
+  },
+  "require-dev": {
+    "composer/installers": "~1.0",
+    "phpunit/phpunit": "4.*"
+  }
+}
